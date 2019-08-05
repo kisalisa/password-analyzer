@@ -3,12 +3,15 @@
 # Authors: Michael Deely, Lisa Li 
 
 import string
+import time
 
 def main():
 	welcome()
 	password = input("Enter a password: ")
 	print("\nyour password length is", length(password))
-	print("your password commonality is") 
+	start = time.time()
+	print("your password commonality is", common_pass(password))
+	print(time.time() - start) 
 	print("your password complexity is", complexity(password))
 
 def welcome():
@@ -120,7 +123,13 @@ def is_lower(password):
 	return 0
 
 def common_pass(password):
-	pass
+	f = open("commonpasslist.txt", "r")
+	lines = f.readlines()
+	for word in lines:
+		if word == password + "\n":
+			return "very common"
+	f.close()
+	return "uncommon"
 
 if __name__ == "__main__":
 	main()
