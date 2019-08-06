@@ -14,4 +14,6 @@ Usage
 --------------
 Implementation
 --------------
-# text here
+This password analyzer relies on three password fundamentals: length, 
+commonality, and complexity. The program parses the password for these 
+components and gives the user a qualitative evaluation of their password.
