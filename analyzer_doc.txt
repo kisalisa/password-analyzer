@@ -1,1 +1,17 @@
-This is where the password analyzer documentation will go.
+=================
+Password Analyzer
+=================
+
+Written in: Python
+Written by: Michael Deely, Lisa Li
+Timeline: July 2019- August 2019
+
+-----
+Usage
+-----
+# text here
+
+--------------
+Implementation
+--------------
+# text here
