@@ -7,12 +7,15 @@ qwerty
 dragon
 pussy
 baseball
+password123
 football
 letmein
 monkey
 696969
 abc123
 mustang
+starwars
+shiba
 michael
 shadow
 master
@@ -26,6 +29,8 @@ harley
 fuckme
 hunter
 fuckyou
+dictionary
+passcode
 trustno1
 ranger
 buster
@@ -33,6 +38,8 @@ thomas
 tigger
 robert
 soccer
+hellothere
+generalkenobi
 fuck
 batman
 test
@@ -610,6 +617,7 @@ howard
 time
 123qwe
 november
+iris
 xxxxx
 october
 leather
