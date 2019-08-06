@@ -16,6 +16,7 @@ def main():
 	print("your password complexity is", complexity(password))
 
 def welcome():
+	"""Prints a welcome message."""
 	print("=================================")
 	print("Welcome to the Password Analyzer!")
 	print("=================================\n")
@@ -76,17 +77,10 @@ def same_type(password):
 		return 2
 	return 5
 
-# i think we should remove this req bc what if u got a complicated pass but the
-# last char just happens to be a num? also, other methods will catch the weak
-# password.
-def last_num(password):
-	try:
-		int(password[-1])
-	except:
-		return 1
-	return 0
-
 def length(password):
+	"""A password must be of length greater than 12 to receive the 'great' rating,
+	of length less than 12 to receive the 'average' rating, and of length less than
+	8 to receive the 'poor' rating."""
 	l = len(password)
 	if l < 8:
 		return "poor- your password will be stronger if it is 12 or more characters" 
@@ -95,6 +89,7 @@ def length(password):
 	return "great"
 
 def has_num(password):
+	"""Counts how many numbers are in the password."""
 	nums = 0
 	for char in password:
 		if char.isdigit():
@@ -106,6 +101,7 @@ def has_num(password):
 	return 0
 
 def is_upper(password):
+	"""Counts how many uppercase letters are in the password."""
 	count = 0
 	for char in password:
 		if char.isupper():
@@ -115,6 +111,7 @@ def is_upper(password):
 	return 0
 
 def is_lower(password):
+	"""Counts how many lowercase letters are in the password."""
 	count = 0
 	for char in password:
 		if char.islower():
@@ -124,6 +121,7 @@ def is_lower(password):
 	return 0
 
 def common_pass(password):
+	"""Checks seclists 10,000+ common passwords."""
 	f = open("commonpasslist.txt", "r")
 	lines = f.readlines()
 	if re.search(r"password*", password):
