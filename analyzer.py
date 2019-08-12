@@ -1,18 +1,16 @@
+#!/user/bin/env python3
 # Project: Password Analyzer
 # Timeline: July 2019 - August 2019
 # Authors: Michael Deely, Lisa Li 
 
 import string
 import re
-# import time
 
 def main():
 	welcome()
 	password = input("Enter a password: ")
 	print("\nyour password length is", length(password))
-#	start = time.time()
 	print("your password commonality is", common_pass(password))
-#	print(time.time() - start) 
 	print("your password complexity is", complexity(password))
 
 def welcome():
