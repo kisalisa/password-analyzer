@@ -14,7 +14,7 @@ def main():
 	print("your password complexity is", complexity(password))
 
 def welcome():
-	"""Prints a welcome message."""
+	"""Prints a welcome message for the user."""
 	print("=================================")
 	print("Welcome to the Password Analyzer!")
 	print("=================================\n")
