@@ -9,7 +9,7 @@ Timeline: July 2019- August 2019
 -----
 Usage
 -----
-# text here
+Running this script will prompt the user to enter a password.
 
 --------------
 Implementation
